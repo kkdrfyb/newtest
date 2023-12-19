@@ -40,8 +40,9 @@
   (command "array" (entlast) "" "po" pa num 360 "y")
   (princ)
 )
+
 ;书上的源码
-(defun c:poly_book(\ baspt rad num ang1 kk cenpt)
+(defun c:poly_book()
   ;以下baspt、rad、num值需由用户输入
   (setq baspt (getpoint "请求输入基准点："))
   (setq rad (getdist baspt "\n请求输入小圆的半径:"))
@@ -54,6 +55,6 @@
   (setq cenpt(polar baspt ang2 kk))
   ;以下根据cenpt、num配合环形array画出多圆相切
   (command "circle" baspt rad)
-  (commmand "array" (entlast) "" "p" cnept num 360 "Y")
+  (command "array" (entlast) "" "p" cenpt num 360 "Y")
   (prin1)
 )
