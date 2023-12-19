@@ -1,4 +1,4 @@
-(defun c:pbox ()
+(defun c:pbox () 
   (setvar "cmdecho" 0)
   (setq pa (getpoint "\n请输入左下角点"))
   (setq ww (getdist pa "\n宽度<1000.0>"))
@@ -11,7 +11,7 @@
   (command "pline" pa pb pc pd "c")
   (princ)
 )
-(defun c:pbox()
+(defun c:pbox () 
   (setvar "cmdecho" 0)
   (setq pa (getpoint "\n请输入左下角点"))
   (setq pc (getcorner pa "\n对角点"))
@@ -19,7 +19,7 @@
   (princ)
 )
 
-(defun c:pbox2(/ pa pb pc pd ww mp1 mp2 mp3 mp4 dd)
+(defun c:pbox2 (/ pa pb pc pd ww mp1 mp2 mp3 mp4 dd) 
   (setvar "cmdecho" 0)
   (setvar "blipmode" 0)
   (setq pa (getpoint "\n请输入左下角点"))
