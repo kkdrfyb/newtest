@@ -1,4 +1,5 @@
 (defun C:draw_triangle () 
+  ;根据直角边长和斜边边长画三角形
   (setq pa (getpoint "请输入直角点pa:"))
   (setq aa (getdist pa "请输入直角边长度"))
   (if (null aa) (setq aa 100))

@@ -1,6 +1,6 @@
 
 (defun C:chgrad () 
-  ;自己写的
+  ;自己写的，修改圆的半径，自己画了一个圆
   (command "circle" (getpoint) (getdist) "")
   ;(setq yuan (entlast))
   (setq yuan1 (entsel))

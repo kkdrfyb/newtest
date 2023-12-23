@@ -1,4 +1,5 @@
-(defun c:pbox () 
+(defun c:pbox ()
+  ;根据输入的长方形的宽和高，画出长方形和对边中线连线  
   (setvar "cmdecho" 0)
   (setq pa (getpoint "\n请输入左下角点"))
   (setq ww (getdist pa "\n宽度<1000.0>"))

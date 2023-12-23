@@ -1,4 +1,5 @@
 ;poly1这个采用有问题 2023年12月19日
+;根据小圆半径和数量画一组环形的相切的圆
 (defun C:poly1 (\ pa rr num angle_1 hh brr tmp_circle tmp_point1 small_circle original_circle rotate_angle count)
   (setvar "cmdecho" 0)
   (setq pa (getpoint "\n请输入左下角点"))
