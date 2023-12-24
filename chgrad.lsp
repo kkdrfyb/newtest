@@ -14,6 +14,8 @@
   (entmod yuan_data)
   (prin1)
 )
+(prompt "***********<c:chgrad>***************")
+(prin1)
 
 (defun c:chgrad1 () 
   ;书本上的源代码
@@ -41,3 +43,5 @@
   ;更新数据
   (prin1)
 )
+(prompt "***********<c:chgrad1>***************")
+(prin1)
